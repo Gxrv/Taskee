@@ -1,11 +1,12 @@
 name: apk compiler
 
 on:
-  workflow_dispatch: # Esto activa el boton manual
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Descargar codigo de Taskee
         uses: actions/checkout@v4
